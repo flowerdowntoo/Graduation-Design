@@ -6,8 +6,12 @@ const _sfc_main = {
   },
   methods: {}
 };
+if (!Array) {
+  const _component_van_cell = common_vendor.resolveComponent("van-cell");
+  _component_van_cell();
+}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {};
 }
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "F:/Hbuilder/workSpace/\u5783\u573E\u5206\u7C7B\u4E0E\u56DE\u6536\u7CFB\u7EDF/pages/cate/cate.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "F:/Hbuilder/workSpace/biyesheji/pages/cate/cate.vue"]]);
 wx.createPage(MiniProgramPage);

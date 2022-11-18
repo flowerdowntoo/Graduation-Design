@@ -5,6 +5,14 @@
     "pages/me/me",
     "pages/shop/shop"
   ],
+  "usingComponents": {
+    "van-button": "/wxcomponents/vant/button/index",
+    "van-image": "/wxcomponents/vant/image/index",
+    "van-grid": "/wxcomponents/vant/grid/index",
+    "van-cell": "/wxcomponents/vant/cell/index",
+    "van-icon": "/wxcomponents/vant/icon/index",
+    "van-grid-item": "/wxcomponents/vant/grid-item/index"
+  },
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "毕业设计",
@@ -38,6 +46,5 @@
         "text": "我的"
       }
     ]
-  },
-  "usingComponents": {}
+  }
 }

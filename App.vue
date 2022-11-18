@@ -15,6 +15,7 @@
 
 <style lang="scss">
 	/*每个页面公共css */
+	@import "/wxcomponents/vant/common/index.wxss";
 	@import '@/uni_modules/uni-scss/index.scss';
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
@@ -30,3 +31,4 @@
 		padding: 10px;
 	}
 </style>
+

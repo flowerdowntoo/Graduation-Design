@@ -20,7 +20,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "F:/Hbuilder/workSpace/\u5783\u573E\u5206\u7C7B\u4E0E\u56DE\u6536\u7CFB\u7EDF/App.vue"]]);
+var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "F:/Hbuilder/workSpace/biyesheji/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		<van-cell>sad</van-cell>
 	</view>
 </template>
 
