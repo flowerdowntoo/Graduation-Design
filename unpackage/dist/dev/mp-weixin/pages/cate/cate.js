@@ -6,6 +6,10 @@ const _sfc_main = {
   },
   methods: {}
 };
+if (!Array) {
+  const _component_van_cell = common_vendor.resolveComponent("van-cell");
+  _component_van_cell();
+}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {};
 }

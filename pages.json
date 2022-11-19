@@ -32,7 +32,16 @@
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
-		}
+		},
+		"usingComponents":{
+							 "van-button": "/wxcomponents/vant/button/index",
+							 "van-image": "/wxcomponents/vant/image/index",
+							 "van-grid": "/wxcomponents/vant/grid/index",
+							 "van-cell": "/wxcomponents/vant/cell/index",
+							 "van-icon": "/wxcomponents/vant/icon/index",
+							 "van-grid-item": "/wxcomponents/vant/grid-item/index"
+							 
+				}
 	},
 	"tabBar": {
 		"list": [
@@ -66,4 +75,5 @@
 			}
 		]
 	}
+			
 }
