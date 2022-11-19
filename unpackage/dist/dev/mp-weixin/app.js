@@ -6,7 +6,8 @@ if (!Math) {
   "./pages/cate/cate.js";
   "./pages/home/home.js";
   "./pages/me/me.js";
-  "./pages/shop/shop.js";
+  "./pages/mall/mall.js";
+  "./subpkg/shop_font/shop_font.js";
 }
 const _sfc_main = {
   onLaunch: function() {

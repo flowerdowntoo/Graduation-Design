@@ -3,7 +3,15 @@
     "pages/cate/cate",
     "pages/home/home",
     "pages/me/me",
-    "pages/shop/shop"
+    "pages/mall/mall"
+  ],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "shop_font/shop_font"
+      ]
+    }
   ],
   "usingComponents": {
     "van-button": "/wxcomponents/vant/button/index",
@@ -34,7 +42,7 @@
         "text": "垃圾分类"
       },
       {
-        "pagePath": "pages/shop/shop",
+        "pagePath": "pages/mall/mall",
         "iconPath": "static/shop.png",
         "selectedIconPath": "static/shop_active.png",
         "text": "商城"

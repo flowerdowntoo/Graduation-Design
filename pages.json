@@ -1,4 +1,20 @@
-{
+{	
+	"subPackages": [
+		{	"root": "subpkg",
+			"pages": [
+				
+			{
+                    "path" : "shop_font/shop_font",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	],
 	"pages": [
 		{
 		"path": "pages/cate/cate",
@@ -19,7 +35,7 @@
 		}
 	},
 	{
-		"path": "pages/shop/shop",
+		"path": "pages/mall/mall",
 		"style": {
 			"navigationBarTitleText": "毕业设计"
 		}
@@ -60,7 +76,7 @@
 				
 			},
 			{
-				"pagePath": "pages/shop/shop",
+				"pagePath": "pages/mall/mall",
 				"iconPath": "static/shop.png",
 				"selectedIconPath": "static/shop_active.png",
 				"text": "商城"
