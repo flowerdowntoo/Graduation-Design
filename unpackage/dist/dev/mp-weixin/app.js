@@ -8,6 +8,7 @@ if (!Math) {
   "./pages/me/me.js";
   "./pages/mall/mall.js";
   "./subpkg/shop_font/shop_font.js";
+  "./subpkg/shop_list/shop_list.js";
 }
 const _sfc_main = {
   onLaunch: function() {

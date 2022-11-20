@@ -1,45 +1,49 @@
-{	
-	"subPackages": [
-		{	"root": "subpkg",
-			"pages": [
-				
+{
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
+
 			{
-                    "path" : "shop_font/shop_font",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-		}
-	],
-	"pages": [
+				"path": "shop_font/shop_font",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "shop_list/shop_list",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
+	}],
+	"pages": [{
+			"path": "pages/cate/cate",
+			"style": {
+				"navigationBarTitleText": "毕业设计"
+			}
+		},
 		{
-		"path": "pages/cate/cate",
-		"style": {
-			"navigationBarTitleText": "毕业设计"
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "毕业设计"
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "毕业设计p"
+			}
+		},
+		{
+			"path": "pages/mall/mall",
+			"style": {
+				"navigationBarTitleText": "毕业设计"
+			}
 		}
-	},
-	{
-		"path": "pages/home/home",
-		"style": {
-			"navigationBarTitleText": "毕业设计"
-		}
-	},
-	{
-		"path": "pages/me/me",
-		"style": {
-			"navigationBarTitleText": "毕业设计p"
-		}
-	},
-	{
-		"path": "pages/mall/mall",
-		"style": {
-			"navigationBarTitleText": "毕业设计"
-		}
-	}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -49,47 +53,51 @@
 		"app-plus": {
 			"background": "#efeff4"
 		},
-		"usingComponents":{
-							 "van-button": "/wxcomponents/vant/button/index",
-							 "van-image": "/wxcomponents/vant/image/index",
-							 "van-grid": "/wxcomponents/vant/grid/index",
-							 "van-cell": "/wxcomponents/vant/cell/index",
-							 "van-icon": "/wxcomponents/vant/icon/index",
-							 "van-grid-item": "/wxcomponents/vant/grid-item/index"
-							 
-				}
+		"usingComponents": {
+
+			"van-grid": "/wxcomponents/vant/grid/index",
+			"van-grid-item": "/wxcomponents/vant/grid-item/index",
+			"van-button": "/wxcomponents/vant/button/index",
+			"van-tab": "/wxcomponents/vant/tab/index",
+			"van-tabs": "/wxcomponents/vant/tabs/index",
+			"van-cell-group": "/wxcomponents/vant/cell-group/index",
+			"van-cell": "/wxcomponents/vant/cell/index",
+			"van-image": "/wxcomponents/vant/image/index",
+			"van-icon": "/wxcomponents/vant/icon/index",
+			"van-calendar": "/wxcomponents/vant/calendar/index"
+
+		}
 	},
 	"tabBar": {
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/home/home",
 				"iconPath": "static/home.png",
 				"selectedIconPath": "static/home_active.png",
 				"text": "首页"
-				
+
 			},
 			{
 				"pagePath": "pages/cate/cate",
 				"iconPath": "static/cate.png",
 				"selectedIconPath": "static/cate_active.png",
 				"text": "垃圾分类"
-				
+
 			},
 			{
 				"pagePath": "pages/mall/mall",
 				"iconPath": "static/shop.png",
 				"selectedIconPath": "static/shop_active.png",
 				"text": "商城"
-				
+
 			},
 			{
 				"pagePath": "pages/me/me",
 				"iconPath": "static/me.png",
 				"selectedIconPath": "static/me_active.png",
 				"text": "我的"
-				
+
 			}
 		]
 	}
-			
+
 }

@@ -1,6 +1,6 @@
 <template>
   <view>
-      <nut-button type="primary" >nutsui</nut-button>
+      <button @click="toShopList()" type="primary">nutsui</button>
   </view>
 </template>
 
@@ -9,10 +9,14 @@
 		data() {
 			return {
 				
-			}
+			} 
 		},
 		methods: {
-			
+			toShopList(){
+				uni.navigateTo({
+					url:"/subpkg/shop_list/shop_list"
+				});
+			}
 		}
 	}
 </script>

@@ -1,1 +1,1 @@
-<view><nut-button wx:if="{{a}}" u-s="{{['d']}}" u-i="7f6efa38-0" bind:__l="__l" u-p="{{a}}">nutsui</nut-button></view>
+<view><button bindtap="{{a}}" type="primary">nutsui</button></view>

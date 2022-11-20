@@ -4,17 +4,17 @@ const _sfc_main = {
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    toShopList() {
+      common_vendor.index.navigateTo({
+        url: "/subpkg/shop_list/shop_list"
+      });
+    }
+  }
 };
-if (!Array) {
-  const _component_nut_button = common_vendor.resolveComponent("nut-button");
-  _component_nut_button();
-}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.p({
-      type: "primary"
-    })
+    a: common_vendor.o(($event) => $options.toShopList())
   };
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "F:/Hbuilder/workSpace/biyesheji/pages/home/home.vue"]]);
