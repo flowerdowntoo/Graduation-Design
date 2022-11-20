@@ -1,6 +1,8 @@
 <template>
   <view>
       <button @click="toShopList()" type="primary">nutsui</button>
+	  
+	
   </view>
 </template>
 

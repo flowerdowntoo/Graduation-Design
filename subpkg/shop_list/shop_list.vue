@@ -1,7 +1,7 @@
 <template>
 	<van-tabs v-model:active="active">
 		<van-tab title="标签 1">
-			<view class="shop_item" v-for="item in list">
+			<view class="shop_item" v-for="item in list" @click="toShopfont()">
 				<image mode="widthFix" style="width: 100px;height: 100px;" src="../../static/home.png"></image>
 				<view class="right">
 					<view class="one">
@@ -24,7 +24,13 @@
 		<van-tab title="标签 3">内容 3</van-tab>
 		<van-tab title="标签 4">内容 4</van-tab>
 	</van-tabs>
-
+	
+<van-action-bar>
+  <van-action-bar-icon icon="chat-o" text="客服" @click="onClickIcon" />
+  <van-action-bar-icon icon="cart-o" text="购物车" @click="onClickIcon" />
+  <van-action-bar-icon icon="shop-o" text="店铺" @click="onClickIcon" />
+  <van-action-bar-button type="danger" text="立即购买" @click="onClickButton" />
+</van-action-bar>
 </template>
 
 <script>
@@ -35,7 +41,11 @@
 			}
 		},
 		methods: {
-
+			toShopfont(){
+				uni.navigateTo({
+					url:"/subpkg/shop_font/shop_font"
+				});
+			}
 		}
 	}
 </script>
