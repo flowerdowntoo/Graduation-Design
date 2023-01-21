@@ -1,4 +1,5 @@
 <template>
+	<view>
 	<van-tabs v-model:active="active">
 		<van-tab title="标签 1">
 			<view class="shop_item" v-for="item in list" @click="toShopfont()">
@@ -18,7 +19,7 @@
 						<view class="four">443.24km</view><view class="text"><van-icon name="location" />江江西乐平市江西乐平市江西乐平市江西乐平市西乐平市</view>
 					</view>
 				</view>
-			</view>
+			</view> 
 		</van-tab>
 		<van-tab title="标签 2">内容 2</van-tab>
 		<van-tab title="标签 3">内容 3</van-tab>
@@ -31,6 +32,7 @@
   <van-action-bar-icon icon="shop-o" text="店铺" @click="onClickIcon" />
   <van-action-bar-button type="danger" text="立即购买" @click="onClickButton" />
 </van-action-bar>
+</view>
 </template>
 
 <script>

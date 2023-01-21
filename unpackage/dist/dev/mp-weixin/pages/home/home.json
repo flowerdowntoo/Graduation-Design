@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "毕业设计",
-  "usingComponents": {}
+  "navigationBarTitleText": "主页",
+  "usingComponents": {
+    "mescroll-body": "/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body",
+    "home-comment": "/component/home-comment"
+  }
 }

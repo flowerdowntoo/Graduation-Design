@@ -1,6 +1,6 @@
 <template>
 	<view class="myContent">
-		<view class="header">
+		<view class="header1">
 			<van-image width="100%" height="100%" class="headbgImage" src="../../../static/24gf-rectangle.png"></van-image>
 			<van-image width="100%" height="100%" round class="myPhoto" src="../../../static/messi.webp">
 			</van-image>
@@ -200,7 +200,7 @@
 		margin: 0 auto;
 	}
  
-	.header {
+	.header1 {
 		flex-direction: row;
 		display: flex;
 		height: 200rpx;

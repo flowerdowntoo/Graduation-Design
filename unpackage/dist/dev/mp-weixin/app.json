@@ -10,23 +10,13 @@
       "root": "subpkg",
       "pages": [
         "shop_font/shop_font",
-        "shop_list/shop_list"
+        "shop_list/shop_list",
+        "huishou/huishou",
+        "publish/publish",
+        "business_enter/business_enter"
       ]
     }
   ],
-  "usingComponents": {
-    "van-grid": "/wxcomponents/vant/grid/index",
-    "van-grid-item": "/wxcomponents/vant/grid-item/index",
-    "van-button": "/wxcomponents/vant/button/index",
-    "van-tab": "/wxcomponents/vant/tab/index",
-    "van-tabs": "/wxcomponents/vant/tabs/index",
-    "van-cell-group": "/wxcomponents/vant/cell-group/index",
-    "van-cell": "/wxcomponents/vant/cell/index",
-    "van-image": "/wxcomponents/vant/image/index",
-    "van-icon": "/wxcomponents/vant/icon/index",
-    "van-calendar": "/wxcomponents/vant/calendar/index",
-    "van-divider": "/wxcomponents/vant/divider/index"
-  },
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "毕业设计",
@@ -60,5 +50,39 @@
         "text": "我的"
       }
     ]
+  },
+  "requiredPrivateInfos": [
+    "chooseLocation",
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息显示"
+    }
+  },
+  "usingComponents": {
+    "van-grid": "/wxcomponents/vant/grid/index",
+    "van-grid-item": "/wxcomponents/vant/grid-item/index",
+    "van-button": "/wxcomponents/vant/button/index",
+    "van-tab": "/wxcomponents/vant/tab/index",
+    "van-tabs": "/wxcomponents/vant/tabs/index",
+    "van-cell-group": "/wxcomponents/vant/cell-group/index",
+    "van-cell": "/wxcomponents/vant/cell/index",
+    "van-image": "/wxcomponents/vant/image/index",
+    "van-icon": "/wxcomponents/vant/icon/index",
+    "van-calendar": "/wxcomponents/vant/calendar/index",
+    "van-divider": "/wxcomponents/vant/divider/index",
+    "van-skeleton": "/wxcomponents/vant/skeleton/index",
+    "van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+    "van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+    "van-popup": "/wxcomponents/vant/popup/index",
+    "van-col": "/wxcomponents/vant/col/index",
+    "van-field": "/wxcomponents/vant/field/index",
+    "van-uploader": "/wxcomponents/vant/uploader/index",
+    "van-radio": "/wxcomponents/vant/radio/index",
+    "van-radio-group": "/wxcomponents/vant/radio-group/index",
+    "van-row": "/wxcomponents/vant/row/index",
+    "van-submit-bar": "/wxcomponents/vant/submit-bar/index",
+    "van-notice-bar": "/wxcomponents/vant/notice-bar/index"
   }
 }

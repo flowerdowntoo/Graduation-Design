@@ -51,11 +51,17 @@
     "mp-weixin" : {
         /* 小程序特有相关 */
         "appid" : "wx456a5b844ec5addd",
+        "requiredPrivateInfos" : [ "chooseLocation", "getLocation" ],
         "setting" : {
             "urlCheck" : false,
             "checkSiteMap" : false
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "位置信息显示"
+            }
+        }
     },
-    "vueVersion" : "3"
+    "vueVersion" : "2"
 }

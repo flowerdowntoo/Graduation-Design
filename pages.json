@@ -1,4 +1,8 @@
 {
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+
 	"subPackages": [{
 		"root": "subpkg",
 		"pages": [
@@ -17,6 +21,27 @@
 					"enablePullDownRefresh": false
 				}
 
+			}, {
+				"path": "huishou/huishou",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "publish/publish",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "business_enter/business_enter",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
 			}
 		]
 	}],
@@ -29,7 +54,14 @@
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "毕业设计"
+				"navigationBarTitleText": "主页",
+
+				"app-plus": {
+					"bounce": "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				} // 取消支付宝和钉钉小程序的iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
 			}
 		},
 		{
@@ -65,9 +97,21 @@
 			"van-image": "/wxcomponents/vant/image/index",
 			"van-icon": "/wxcomponents/vant/icon/index",
 			"van-calendar": "/wxcomponents/vant/calendar/index",
-			"van-divider": "/wxcomponents/vant/divider/index"
-		
-			
+			"van-divider": "/wxcomponents/vant/divider/index",
+			"van-skeleton": "/wxcomponents/vant/skeleton/index",
+			"van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+			"van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+			"van-popup": "/wxcomponents/vant/popup/index",
+			"van-col": "/wxcomponents/vant/col/index",
+			"van-cell-group": "/wxcomponents/vant/cell-group/index",
+			"van-field": "/wxcomponents/vant/field/index",
+			"van-uploader": "/wxcomponents/vant/uploader/index",
+			"van-radio": "/wxcomponents/vant/radio/index",
+			"van-radio-group": "/wxcomponents/vant/radio-group/index",
+			"van-row": "/wxcomponents/vant/row/index",
+			"van-submit-bar": "/wxcomponents/vant/submit-bar/index",
+			"van-notice-bar": "/wxcomponents/vant/notice-bar/index",
+			"van-datetime-picker": "/wxcomponents/vant/datetime-picker/index"
 
 
 		}

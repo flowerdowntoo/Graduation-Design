@@ -1,38 +1,39 @@
 
 .one {
-		/* background-color: red; */
+	/* background-color: red; */
 }
 .right {
-	
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 .hot {
-		/* background-color: aqua; */
-		float: right;
+	/* background-color: aqua; */
+	float: right;
 }
 .shop_item {
-		
-		display: flex;
-		margin-bottom: 5px;
+	
+	display: flex;
+	margin-bottom: 5px;
 }
 .four {
-		/* background-color: aquamarine; */
-		float: right;
+	/* background-color: aquamarine; */
+	float: right;
 }
 .text {
-		width: 200px;
-		colof: #999;
-		overflow: hidden;
-		word-break: break-all;
-		/* break-all(允许在单词内换行。) */
-		text-overflow: ellipsis;
-		/* 超出部分省略号 */
-		display: -webkit-box;
-		/** 对象作为伸缩盒子模型显示 **/
-		-webkit-box-orient: vertical;
-		/** 设置或检索伸缩盒对象的子元素的排列方式 **/
-		-webkit-line-clamp: 1;
-		/** 显示的行数 **/
+	width: 200px;
+	colof: #999;
+	overflow: hidden;
+	word-break: break-all;
+	/* break-all(允许在单词内换行。) */
+	text-overflow: ellipsis;
+	/* 超出部分省略号 */
+	display: -webkit-box;
+	/** 对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical;
+	/** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 1;
+	/** 显示的行数 **/
 }
+
