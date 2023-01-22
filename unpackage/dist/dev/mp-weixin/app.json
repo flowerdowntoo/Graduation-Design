@@ -13,7 +13,8 @@
         "shop_list/shop_list",
         "huishou/huishou",
         "publish/publish",
-        "business_enter/business_enter"
+        "business_enter/business_enter",
+        "publish_detail/publish_detail"
       ]
     }
   ],

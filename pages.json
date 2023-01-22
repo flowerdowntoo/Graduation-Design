@@ -43,7 +43,16 @@
 				}
 
 			}
-		]
+		    ,{
+                    "path" : "publish_detail/publish_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
 	}],
 	"pages": [{
 			"path": "pages/cate/cate",

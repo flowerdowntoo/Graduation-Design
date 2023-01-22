@@ -71,8 +71,8 @@
 			<view class="title">支付方式</view>
 			<u-form-item>
 				<u-radio-group v-model="pay" placement="column" iconPlacement="right">
-					<u-radio activeColor="red" label="在线支付"></u-radio>
-					<u-radio activeColor="red" label="支付"></u-radio>
+					<u-radio  :customStyle="{marginBottom: '8px'}" activeColor="red" label="在线支付"></u-radio>
+					<u-radio :customStyle="{marginBottom: '8px'}" activeColor="red" label="支付"></u-radio>
 				</u-radio-group>
 			</u-form-item>
 			<!-- 		<van-radio-group v-model="pay">

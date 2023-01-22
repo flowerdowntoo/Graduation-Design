@@ -101,7 +101,7 @@ var components
 try {
   components = {
     mescrollBody: function () {
-      return Promise.all(/*! import() | uni_modules/mescroll-uni/components/mescroll-body/mescroll-body */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/mescroll-uni/components/mescroll-body/mescroll-body")]).then(__webpack_require__.bind(null, /*! @/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body.vue */ 229))
+      return Promise.all(/*! import() | uni_modules/mescroll-uni/components/mescroll-body/mescroll-body */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/mescroll-uni/components/mescroll-body/mescroll-body")]).then(__webpack_require__.bind(null, /*! @/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body.vue */ 239))
     },
   }
 } catch (e) {
@@ -200,7 +200,7 @@ var _mescrollMixins = _interopRequireDefault(__webpack_require__(/*! @/uni_modul
 //
 var homeComment = function homeComment() {
   __webpack_require__.e(/*! require.ensure | component/home-comment */ "component/home-comment").then((function () {
-    return resolve(__webpack_require__(/*! ../../component/home-comment.vue */ 242));
+    return resolve(__webpack_require__(/*! ../../component/home-comment.vue */ 252));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
