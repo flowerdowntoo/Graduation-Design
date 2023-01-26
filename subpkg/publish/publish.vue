@@ -88,7 +88,7 @@
 			toPublishDetail(index) {
 			
 				uni.navigateTo({
-					url: `/subpkg/publish_detail/publish_detail?key=${index}`,
+					url: `/subpkg/business_enter/business_enter?key=${index}`,
 					
 				})
 			}

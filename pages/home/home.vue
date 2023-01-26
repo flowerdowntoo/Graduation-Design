@@ -1,16 +1,16 @@
 <template>
-	<view>
-			<button @click="toPage2()">huishou</button>
-		<button @click="toPage()">abc</button>
-		<van-tabs v-model:active="active">
+	<view>	 
+		<my-float :x=85 :y=90 @click.native="toPublish"></my-float> 
+		<button @click="toPage2()">abc</button>
+		<van-tabs v-model:active="active" sticky>
 		
 			<van-tab title="最新发布">
-			<mescroll-body ref="mescrollRef"  @down="downCallback" @up="upCallback" :down="downOption" :up="upOption">
+			<mescroll-body ref="mescrollRef" @init="mescrollInit"  @down="downCallback" @up="upCallback" :down="downOption" :up="upOption">
 										 
 				<block v-for="(lista,listindex) in list" :key="listindex">
 						
 						<homeComment
-						
+						@click.native="toCommentDeail(lista.id)"
 						:item="lista"
 						:index="listindex"
 					
@@ -40,12 +40,14 @@ import MescrollMixin from "@/uni_modules/mescroll-uni/components/mescroll-uni/me
 	},
 	data() {
 		return {
+			count:1,
 			downOption:{
 				auto:false
 			},
 			list:[
 				{
 					//文字
+				  id:"1",	
 				  userimg:'/../static/cate_active.png',
 				  username:'张三',
 				  userage:'30',
@@ -58,10 +60,11 @@ import MescrollMixin from "@/uni_modules/mescroll-uni/components/mescroll-uni/me
 				  positiona:'深圳 龙岗',
 				  sharenum:30,
 				  pinglunnum:100,
-				  zannum:50
-				   
+				  zannum:50,
+				   isZhiding:true
 				},{
 					//文字
+				  id:"2",
 				  userimg:'/../static/cate_active.png',
 				  username:'张三',
 				  userage:'30',
@@ -74,17 +77,71 @@ import MescrollMixin from "@/uni_modules/mescroll-uni/components/mescroll-uni/me
 				  positiona:'深圳 龙岗',
 				  sharenum:30,
 				  pinglunnum:100,
-				  zannum:50
-				   
+				  zannum:50,
+				   isZhiding:false
 				}
 				]
 		}
 	},
 		methods: {
+			toCommentDeail(id){
+				uni.navigateTo({
+					url:'/subpkg/comment_detail/comment_detail?id${id}',
+				});
+			},
+			// downCallback(page){
+			// 	console.log(page)
+			// 	var a = {
+			// 			//文字
+			// 		  id:"3",	
+			// 		  userimg:'/../static/cate_active.png',
+			// 		  username:'李四',
+			// 		  userage:'30',
+			// 		  sex:0,//0代表男，1 代表女
+			// 		  isguanzhu:false,
+			// 		  title:'庆祝祖国成立90周年！庆祝祖国成立90周年!庆祝祖国成立90周年!',
+			// 		  titleimg:["/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg"],
+			// 		  video:false,
+			// 		  sharea:false,
+			// 		  positiona:'深圳 龙岗',
+			// 		  sharenum:30,
+			// 		  pinglunnum:100,
+			// 		  zannum:50
+					   
+			// 		}
+			// 	this.list.push(a)
+			// 	 this.mescroll.resetUpScroll()
+			// },
 		upCallback(page) {
+			try{
+				var a = {
+						//文字
+					  id:"4",	
+					  userimg:'/../static/cate_active.png',
+					  username:'王五',
+					  userage:'30',
+					  sex:0,//0代表男，1 代表女
+					  isguanzhu:false,
+					  title:'庆祝祖国成立90周年！庆祝祖国成立90周年!庆祝祖国成立90周年!',
+					  titleimg:["/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg"],
+					  video:false,
+					  sharea:false,
+					  positiona:'深圳 龙岗',
+					  sharenum:30,
+					  pinglunnum:100,
+					  zannum:50,
+					  isZhiding:false
+					   
+					}
+				this.list.push(a)
+				page.endBySize(this.count++, 20);
+			}catch{
+				page.endErr()
+			}
+			
 			
 		},
-		toPage(){
+		toPublish(){
 			uni.navigateTo({
 				url:'/subpkg/publish/publish',
 			});
@@ -94,7 +151,7 @@ import MescrollMixin from "@/uni_modules/mescroll-uni/components/mescroll-uni/me
 				url:'/subpkg/huishou/huishou',
 			});
 		}
-		}
+		} 
 	}
 </script>
 

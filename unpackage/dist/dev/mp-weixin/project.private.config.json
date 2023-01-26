@@ -9,8 +9,57 @@
       "list": [
         {
           "name": "",
-          "pathName": "subpkg/publish_detail/publish_detail",
+          "pathName": "subpkg/address_add/address_add",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/address_select/address_select",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/order_list/order_list",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/order_detail/order_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/order_list/order_list",
+          "query": "userid%7Buserid%7D=undefined",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/mall/mall",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/comment_detail/comment_detail",
+          "query": "id%24%7Bid%7D=undefined",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/shop_font/shop_font",
+          "query": "id%2524%257Bid%257D=undefined",
           "launchMode": "default",
           "scene": null
         }

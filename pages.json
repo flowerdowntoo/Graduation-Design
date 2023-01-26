@@ -12,6 +12,7 @@
 				"style": {
 					"navigationBarTitleText": "",
 					"enablePullDownRefresh": false
+					
 				}
 
 			}, {
@@ -52,6 +53,61 @@
                 }
                 
                 }
+                ,{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "address_add/address_add",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "新增地址",
+                    "enablePullDownRefresh": false
+					
+                }
+                
+                }
+                ,{
+                    "path" : "address_select/address_select",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "order_list/order_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "order_detail/order_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "comment_detail/comment_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
             ]
 	}],
 	"pages": [{
@@ -85,7 +141,16 @@
 				"navigationBarTitleText": "毕业设计"
 			}
 		}
-	],
+	    ,{
+            "path" : "component/mp-html/mp-html",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "毕业设计",
@@ -120,9 +185,11 @@
 			"van-row": "/wxcomponents/vant/row/index",
 			"van-submit-bar": "/wxcomponents/vant/submit-bar/index",
 			"van-notice-bar": "/wxcomponents/vant/notice-bar/index",
-			"van-datetime-picker": "/wxcomponents/vant/datetime-picker/index"
+			"van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+				"van-area": "/wxcomponents/vant/area/index",
+							"van-tree-select": "/wxcomponents/vant/tree-select/index"
 
-
+ 
 		}
 	},
 	"tabBar": {

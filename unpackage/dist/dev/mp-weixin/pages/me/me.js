@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -211,6 +211,21 @@ var _default = {
     this.liebiaoIcon();
   },
   methods: {
+    fn: function fn(method) {
+      console.log(method);
+      this[method]();
+    },
+    toOrder: function toOrder() {
+      uni.navigateTo({
+        url: "/subpkg/order_list/order_list?userid{userid}"
+      });
+    },
+    toAddress: function toAddress(userid) {
+      console.log(userid);
+      uni.navigateTo({
+        url: "/subpkg/address_select/address_select?userid{userid}"
+      });
+    },
     /* 支付导航 */huishouIcon: function huishouIcon() {
       var data = {
         "icons": [{
@@ -283,9 +298,11 @@ var _default = {
           "text": "我的收藏",
           "toUrl": ""
         }, {
+          "userid": '1',
           "photoSrc": "../../../static/Reserved.png",
           "text": "地址管理",
-          "toUrl": ""
+          "toUrl": "",
+          "clickname": "toAddress"
         }, {
           "photoSrc": "../../../static/Reserved.png",
           "text": "商家入驻",
@@ -317,6 +334,7 @@ var _default = {
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

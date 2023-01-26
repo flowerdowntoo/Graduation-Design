@@ -3,7 +3,8 @@
     "pages/cate/cate",
     "pages/home/home",
     "pages/me/me",
-    "pages/mall/mall"
+    "pages/mall/mall",
+    "component/mp-html/mp-html"
   ],
   "subPackages": [
     {
@@ -14,7 +15,13 @@
         "huishou/huishou",
         "publish/publish",
         "business_enter/business_enter",
-        "publish_detail/publish_detail"
+        "publish_detail/publish_detail",
+        "goods_detail/goods_detail",
+        "address_add/address_add",
+        "address_select/address_select",
+        "order_list/order_list",
+        "order_detail/order_detail",
+        "comment_detail/comment_detail"
       ]
     }
   ],
@@ -84,6 +91,11 @@
     "van-radio-group": "/wxcomponents/vant/radio-group/index",
     "van-row": "/wxcomponents/vant/row/index",
     "van-submit-bar": "/wxcomponents/vant/submit-bar/index",
-    "van-notice-bar": "/wxcomponents/vant/notice-bar/index"
+    "van-notice-bar": "/wxcomponents/vant/notice-bar/index",
+    "van-area": "/wxcomponents/vant/area/index",
+    "van-tree-select": "/wxcomponents/vant/tree-select/index",
+    "my-float": "/component/float/float",
+    "my-divider": "/component/fengexian/fengexian",
+    "goods-carts": "/component/goods-carts/goods-carts"
   }
 }

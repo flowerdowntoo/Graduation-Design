@@ -5,10 +5,10 @@
 		</view>
 		<view class="common-right">
 			<view class="top">
-				<view class="left">人在旅途</view>
+				<view class="left">{{item.username}}</view>
 				<view class="right">
 					<van-button icon="phone" size="small" type="primary">拨打电话</van-button>
-					<van-button size="small" type="warning">顶</van-button>
+					<van-button v-if="item.isZhiding" size="small" type="warning">顶</van-button>
 				</view>
 			</view>
 			<view class="middle">
@@ -37,7 +37,7 @@
 						<van-icon name="location" /><text class="viewCount">10678</text>
 					</view> 
 					<view  class="item">
-						<van-icon name="location" /><text class="commentCount">0</text>
+						<image style="width: 30rpx;height: 30rpx;" src="../static/评论.png"></image><text class="commentCount">0</text>
 					</view>
 				</view>
 			</view>
@@ -87,7 +87,8 @@
 			justify-content: space-between;
 
 			.right {
-				height: 50rpx;
+				display: flex;
+				// height: 50rpx;
 			}
 		}
 
@@ -101,10 +102,12 @@
 				padding-left: 30rpx;
 				padding-right: 30rpx;
 				display: flex;
-				justify-content: space-between;
+			
+				// justify-content: space-between;
 
 				image {
-					border-radius: 10rpx 10rpx 10rpx 10rpx;
+					margin: 6rpx;
+					border-radius: 20rpx;
 				}
 			}
 		}
@@ -117,12 +120,19 @@
 			.bottom-top{
 				padding-bottom: 10rpx;
 			}
+			
 			.bottom-inner{
 				display: flex;
 				.item{
+					display: flex;
 					padding-right: 20rpx;
 				}
 			}
 		}
+	}
+	.commentCount{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

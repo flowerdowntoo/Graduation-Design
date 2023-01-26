@@ -101,7 +101,7 @@ var components
 try {
   components = {
     mescrollBody: function () {
-      return Promise.all(/*! import() | uni_modules/mescroll-uni/components/mescroll-body/mescroll-body */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/mescroll-uni/components/mescroll-body/mescroll-body")]).then(__webpack_require__.bind(null, /*! @/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body.vue */ 239))
+      return Promise.all(/*! import() | uni_modules/mescroll-uni/components/mescroll-body/mescroll-body */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/mescroll-uni/components/mescroll-body/mescroll-body")]).then(__webpack_require__.bind(null, /*! @/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body.vue */ 320))
     },
   }
 } catch (e) {
@@ -200,7 +200,7 @@ var _mescrollMixins = _interopRequireDefault(__webpack_require__(/*! @/uni_modul
 //
 var homeComment = function homeComment() {
   __webpack_require__.e(/*! require.ensure | component/home-comment */ "component/home-comment").then((function () {
-    return resolve(__webpack_require__(/*! ../../component/home-comment.vue */ 252));
+    return resolve(__webpack_require__(/*! ../../component/home-comment.vue */ 333));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -211,11 +211,13 @@ var _default = {
   },
   data: function data() {
     return {
+      count: 1,
       downOption: {
         auto: false
       },
       list: [{
         //文字
+        id: "1",
         userimg: '/../static/cate_active.png',
         username: '张三',
         userage: '30',
@@ -229,9 +231,11 @@ var _default = {
         positiona: '深圳 龙岗',
         sharenum: 30,
         pinglunnum: 100,
-        zannum: 50
+        zannum: 50,
+        isZhiding: true
       }, {
         //文字
+        id: "2",
         userimg: '/../static/cate_active.png',
         username: '张三',
         userage: '30',
@@ -245,13 +249,67 @@ var _default = {
         positiona: '深圳 龙岗',
         sharenum: 30,
         pinglunnum: 100,
-        zannum: 50
+        zannum: 50,
+        isZhiding: false
       }]
     };
   },
   methods: {
-    upCallback: function upCallback(page) {},
-    toPage: function toPage() {
+    toCommentDeail: function toCommentDeail(id) {
+      uni.navigateTo({
+        url: '/subpkg/comment_detail/comment_detail?id${id}'
+      });
+    },
+    // downCallback(page){
+    // 	console.log(page)
+    // 	var a = {
+    // 			//文字
+    // 		  id:"3",	
+    // 		  userimg:'/../static/cate_active.png',
+    // 		  username:'李四',
+    // 		  userage:'30',
+    // 		  sex:0,//0代表男，1 代表女
+    // 		  isguanzhu:false,
+    // 		  title:'庆祝祖国成立90周年！庆祝祖国成立90周年!庆祝祖国成立90周年!',
+    // 		  titleimg:["/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg","/../static/messi.jpg"],
+    // 		  video:false,
+    // 		  sharea:false,
+    // 		  positiona:'深圳 龙岗',
+    // 		  sharenum:30,
+    // 		  pinglunnum:100,
+    // 		  zannum:50
+    // 		}
+    // 	this.list.push(a)
+    // 	 this.mescroll.resetUpScroll()
+    // },
+    upCallback: function upCallback(page) {
+      try {
+        var a = {
+          //文字
+          id: "4",
+          userimg: '/../static/cate_active.png',
+          username: '王五',
+          userage: '30',
+          sex: 0,
+          //0代表男，1 代表女
+          isguanzhu: false,
+          title: '庆祝祖国成立90周年！庆祝祖国成立90周年!庆祝祖国成立90周年!',
+          titleimg: ["/../static/messi.jpg", "/../static/messi.jpg", "/../static/messi.jpg", "/../static/messi.jpg", "/../static/messi.jpg"],
+          video: false,
+          sharea: false,
+          positiona: '深圳 龙岗',
+          sharenum: 30,
+          pinglunnum: 100,
+          zannum: 50,
+          isZhiding: false
+        };
+        this.list.push(a);
+        page.endBySize(this.count++, 20);
+      } catch (_unused) {
+        page.endErr();
+      }
+    },
+    toPublish: function toPublish() {
       uni.navigateTo({
         url: '/subpkg/publish/publish'
       });

@@ -23,7 +23,7 @@
 		</view>
 		<view class="mydingdan">
 			<view class="row1">
-				<van-cell is-link url="/pagesOrderList/orderlist/index?active=all" title="回收订单" value="全部订单" link-type="navigateTo"/>
+				<van-cell @click="toOrder" is-link url="/pagesOrderList/orderlist/index?active=all" title="回收订单" value="全部订单" link-type="navigateTo"/>
 			</view>
 			<view class="zhifu">
 				<van-grid :gutter="3" square column-num="5">
@@ -37,15 +37,15 @@
 			</view>
 			<view class="zhifu">
 				<van-grid :gutter="3" square column-num="5">
-					<van-grid-item v-for="(item,key) in duihuanicon" :key="key" :url="item.toUrl" :text="item.text" :icon="item.photoSrc" />
+					<van-grid-item v-for="(item,key) in duihuanicon" :key="key" :url="item.toUrl" :text="item.text" :icon="item.photoSrc" @click="toOrder" />
 				</van-grid>
 			</view>
 		</view>
 		
 		<view class="liebiao">
-			<van-cell is-link v-for="(liebiao,key) in lbIcon" :key="key" :icon="liebiao.photoSrc" :title="liebiao.text" :url="liebiao.toUrl">
+			<van-cell is-link v-for="(liebiao,key) in lbIcon" :key="key" :icon="liebiao.photoSrc" :title="liebiao.text" :url="liebiao.toUrl" @click="fn(liebiao.clickname)">
 			  <van-icon slot="right-icon" class="custom-icon" />
-			</van-cell>
+			</van-cell> 
 		</view>
 	</view>
 </template>
@@ -70,13 +70,29 @@
  
 		},
 		methods: {
+			fn(method){
+				 console.log(method);
+				this[method]();
+			},
+			toOrder(){
+			
+				uni.navigateTo({
+					url: `/subpkg/order_list/order_list?userid{userid}`,
+				})
+			},
+			toAddress(userid){
+				console.log(userid) 
+				uni.navigateTo({
+					url: `/subpkg/address_select/address_select?userid{userid}`,
+				})
+			},
 			/* 支付导航 */
 			huishouIcon() {
 				var data = {
 					"icons": [{
 							"photoSrc": "../../../static/Reserved.png",
 							"text": "已预约",
-							"toUrl": "/pagesOrderList/orderlist/index?active=dfk"
+							"toUrl": "/pagesOrderList/orderlist/index?active=dfk",
 						},
 						{
 							"photoSrc": "../../../static/Reserved.png",
@@ -147,14 +163,17 @@
 							"toUrl": ""
 						},
 						{
+							"userid":'1',
 							"photoSrc": "../../../static/Reserved.png",
 							"text": "地址管理",
-							"toUrl": ""
+							"toUrl": "",
+							"clickname":"toAddress"
 						},
 						{
 							"photoSrc": "../../../static/Reserved.png",
 							"text": "商家入驻",
-							"toUrl": ""
+							"toUrl": "",
+						
 						},
 						{
 							"photoSrc": "../../../static/Reserved.png",

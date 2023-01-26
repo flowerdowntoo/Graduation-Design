@@ -7,7 +7,7 @@
 				<view class="right">
 					<view class="one">
 						<view class="hot"><text>822</text>
-							<van-icon name="fire" class="fire" />
+							<van-icon name="chat-o" color="#ee0a24" />
 						</view>
 						<view class="text">乐平乐平乐资源又像是乐资源又像是</view>
 

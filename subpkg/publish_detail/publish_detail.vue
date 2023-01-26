@@ -24,10 +24,10 @@
 
 			<u-form-item label="是否置顶">
 				<u-switch v-model="switchVal" @change="change"></u-switch>
-			</u-form-item>
+			</u-form-item> 
  
-
-			<u-form-item>   
+ 
+			<u-form-item>  
 				<u-radio-group v-model="pay" placement="column" iconPlacement="right" >
 					<u-radio borderBottom :customStyle="{marginBottom: '8px'}" activeColor="red" label="在线支付"></u-radio>
 				  <view class="home-header-line"></view>
